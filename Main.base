@@ -1,0 +1,12 @@
+formulas:
+  Untitled: ""
+views:
+  - type: table
+    name: Table
+    order:
+      - Chapter
+      - Part
+      - Topic
+      - file.name
+    columnSize:
+      note.Topic: 156
