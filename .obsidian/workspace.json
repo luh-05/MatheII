@@ -4,37 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "3f6e8e8cf538b856",
+        "id": "ca217e2d4c8ecbb4",
         "type": "tabs",
         "children": [
           {
-            "id": "a693d16d8a284a20",
+            "id": "ee8d03149da25dae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "KVK/Tag 1.md",
+                "file": "KVK/Tag 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tag 1"
-            }
-          },
-          {
-            "id": "c976f1db648c0864",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.12"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "title": "Tag 2"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -179,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,19 +181,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "90b3f1bf8d140658",
+  "active": "ee8d03149da25dae",
   "lastOpenFiles": [
+    "KVK/Tag 1.md",
+    "KVK/Tag 2.md",
+    "Pasted Images/Pasted image 20250828100001.png",
+    "Pasted Images/Pasted image 20250828100844.png",
     "KVK/Später anschauen und stuff.md",
+    "Pasted Images/Pasted image 20250827210453.png",
+    "Pasted Images/Pasted image 20250827190344.png",
+    "Offene, abgeschlossene, beschränkte und kompakte mengen.md",
+    "Folgen/Konvergenz von Folgen.md",
     "Euklidische Räume/Normierte Vektorräume.md",
     "Euklidische Räume/Euklidische Vektorräume.md",
-    "KVK/Tag 1.md",
+    "Pasted Images/Pasted image 20250827203754.png",
+    "Pasted Images/Pasted image 20250827203051.png",
+    "Pasted Images/Pasted image 20250827201712.png",
+    "Pasted Images/Pasted image 20250827201620.png",
+    "Pasted Images/Pasted image 20250827201259.png",
+    "Pasted Images/Pasted image 20250827184555.png",
+    "Pasted Images",
     "Main.base",
     "KVK",
     "Untitled.md",
-    "Folgen/Konvergenz von Folgen.md",
     "Euklidische Räume",
     "^Defin.md",
-    "Offene, abgeschlossene, beschränkte und kompakte mengen.md",
     "Folgen",
     "Untitled 1.base",
     "Foo.md",
