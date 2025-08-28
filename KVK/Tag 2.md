@@ -97,3 +97,72 @@ __Satz 19.2 "Satz von Rolle"__
 - Gilt $f(a) = f(b)$ und $f in C([a,b])$, so gibt es ein $xi in (a,b)$ mit $f^prime (xi) = 0$
 - ist nur ein Spezialfall des __19.1 MWS[[#^348e20]]__
 ![[Pasted image 20250828100844.png]]
+## Recap Differenzierbarkeit in mehreren Variablen
+### Unterschiedliche Differenzierbarkeit
+![[Pasted image 20250828112144.png]]
+__Anmerkungen__
+- __Total diffbar__ ist unsere vertraute __Differenzierbarkeit__ in einer Variablen
+- Im Eindimensional gibt es nur eine Richtung, daher fallen __partielle__ (also Betrachtung entland der Hauptachsen) & __totale Differenzierbarkeit__ zusammen
+### Partielle Differenzierbarkeit & Richtungsableitung
+- __Definition 21.3__ Partiell differenzierbar
+	- Ableitung entlang der Hauptachsen existiert
+	- hinsichtlich "Handwerk & Anwendung" unserer wichtigster Differenzierbarkeitsbegriff
+- __Definition 21.1__ Richtungsableitung
+	- Ableitung entland einer bestimmten Richtung existiert
+	- Richtung muss keine der Hauptachsen entsprechen
+	- Verallgemeinerung von partielle Differenzierbarkeit
+- Zusammenhang __partielle Differenzierbarkeit__ und __Richtungsableitung__
+	- Wenn alle Richtungsableitungen existieren, existier natürlich auch die Ableitung entlang der Hauptachsen
+		- Differenzierbar in __alle Richtungen__ $=>$ __partiell differenzierbar__
+		- Die Umkehrung ist falsch!
+	- Die Ableitung entland eines beliebigen Vektors $v$, kann durch __Linearkombination__ der partiellen Ableitungen dargestellt werden
+### Partielle & totale Differenzierbarkeit
+- __Theorem 21.22__ Zusammenhand totale und partielle Differenzierbarkeit
+	- $f$ total differenzierbar in $x_0$, dann existiert die __Richtungsableitung__ in jede Richtung
+	- Insbesondere ist $f$ auch __partiell differenzierbar__
+	- Die lineare Abbildung $Phi: RR^d -> RR^p$ (d.h. Abbildungsfunktion) ist gegeben durch die Jacobi-Matrix $J_f$
+- __Satz 21.24__ Totale Differenzierbarkeit in $x_0$ impliziert __Stetigkeit__ in $x_0$
+	- Totale Differenzierbarkeit ist also das, was wir bisher unter "Differenzierbarkeit in einer Variablen" kannten
+### Partielle Differenzierbarkeit
+- __Definition 21.3__ Partielle Differenzierbarkeit (engl. partial derivative)
+	- Wir haben Funktionen, die aus dem $RR^d$ abbilden, d.h. unsere Funktionen haben mehrere Argumente  oder auch "Richtungen" (sind Vektoren)
+	- Partielle Ableitungen beschreiben die Veränderung, wenn wir nur eines der Argumente ändern
+	- _(2)_ liefert und die Notationsmöglichkeiten ($diff$ wird "del" genannt und diff geschrieben) $$ diff_j f(x_0) := (diff f)/(diff x_j) (x_0) $$
+- __Bemerkung 21.6__ Vergehen zur Bestimmung partielle Ableitungen
+	- Behandle die anderen Variablen als Konstante
+	- Insbesondere können wir also unsere bekannten Ableitungsregeln benutzen!
+- Graphische Interpretation (für skalarwertige Funktionen, d.h. $RR^d -> RR$)
+	- Vorher: Differenzierbarkeit: Tangentensteigung in dem Punkt
+	- Jetzt: Schnitt mit Koordinatenachse und dann Tangentensteigung im Punkt
+
+Anmerkung: "Partiell", da diese Form der Differenzierbarkeit nur einen Teil (part) betrachtet
+### Beispiel mit Geogebra: $f(x,y) = x^2 + sin(y)$
+- Wir bestimmen zunächst die partiellen Ableitungen der Funktion
+	- in dem wir die jeweils andere Variable als Konstante behandeln
+	- Und dann unsere eindimensionalen Ableitungsregeln anwenden
+
+Wir erhalten
+- $diff/(diff x) f(x,y) = 2x y$
+- $diff/(diff y) f(x, y) = x^2 + cos (y)$
+
+- Beide haben eine unmittelbare visuelle Interpretation
+	- Geogebra-Datei im Order uebung09
+### Gradient
+- __Definition 21.10__ Gradient
+	- Für eine skalarwertige Funktion $RR^d -> RR$ haben wir
+		- $d$ Richtungen und somit
+		- $d$ partielle Ableitungen
+	- Wir nennen $nabla f(x_0) = (diff_1 f(x_0), diff_2 f(x_0), dots, diff_d f(x_0))$ den __Gradient von f__
+	- Wichtig: Der __Gradient__ ist (in Mathe2) ein Zeilenvektor (bzw. $1 times d$-Matrix)
+	- Das Symbol $nabla$ heißt __nabla__ (und wir _nabla_ geschrieben)
+	- Salopp: Der __Gradient__ sammelt unsere partiellen Ableitungen in einem Zeilenvektor
+- _Beispiel_: Der __Gradient__ der Funktion $f(x, y) = x^2 y + sin(y)$ ist $nabla f(x,y) = (2x y, x^2 + cos (y))$
+- __Bemerkung 21.11__ Geometrische Interpretation
+	- Der Gradient ist die Richtung des stärksten Anstiegs
+	- Der Betrag (also die Länge des Vektors) ist die Steilheit (engl. steepness) des Anstiegs
+### Skalar- vs. vektorwertige Funktionen
+- Für allgemeine Funktionen $RR^d -> RR^p$ unterscheiden wir zwischen
+	- $p = 1$ skalarwertige Funktionen
+		- Funktionen, die wir bisher betrachtet haben
+		- Sind interessant, da wie hierüber Optimierung betreiben können (vgl. __Kapitel 22__ Extremwertprobleme)
+	- $p > 1$ vektorwertige Funktionen
